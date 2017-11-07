@@ -2,13 +2,27 @@
 
 Track monsters on a monitor with this Halloween party toy.
 
+## Demo
+
+![Preview GIF](watch-monster.gif)
+
 ## Getting started
+
+#### Raspberry Pi
 
 - Install OpenCV on [Raspberry Pi](http://www.pyimagesearch.com/2016/04/18/install-guide-raspberry-pi-3-raspbian-jessie-opencv-3/) or ubuntu:
 
 ```
 [compiler] sudo apt-get install build-essential
 [required] sudo apt-get install cmake git libgtk2.0-dev pkg-config libavcodec-dev libavformat-dev libswscale-dev python-dev python-numpy libpng-dev
+```
+
+#### Laptop
+
+- Install OpenCV with Conda
+
+```sh
+conda install -c menpo opencv3
 ```
 
 - Clone the repository:
@@ -39,12 +53,3 @@ mv config.json.example config.json
 ```
 
 and add your API key to `config.json`.
-
-## NOTES
-
-- Works for laptop, not yet tested on Raspberry Pi
-
-## TODO
- - [ ] Add subprocessing to remove delay for image uploading
- - [ ] Add face detection stub
- - [ ] Add script for real-time detection of new images via Imgur API.
